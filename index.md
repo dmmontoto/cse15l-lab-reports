@@ -1,4 +1,4 @@
 Hello github.
 Test 1.
 
-[link](LabOneTest.md)
+[link](week-one-lab-report.md)

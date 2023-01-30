@@ -5,7 +5,7 @@
 
 ### Part 2: arrayList Bug
 
-* Below are two failure-inducing inputs as JUnit tests. They are for the two buggy methods provided in ArrayExamples.java, `reverseInPlace()` and `reversed()`.
+* Below are two failure-inducing inputs as JUnit tests. They are for the two buggy methods provided in ArrayExamples.java, `reverseInPlace(int[] arr)` and `reversed(int[] arr)`.
 
 ```
 @Test
@@ -22,7 +22,7 @@ public void testReversed1() {
 }
 ```
 
-* Below are two inputs as JUnit tests, that do not induce a failure. The first test, for `reverseInPlace()`, fails to point out the bug because the array has a signle element, and the sympton is the same as the input. Test two, for `reversed()`, fails to point out the bug because the input is an emtpy array, and so is the symptom.
+* Below are two inputs as JUnit tests, that do not induce a failure. The first test, for `reverseInPlace(int[] arr)`, fails to point out the bug because the array has a signle element, and the sympton is the same as the input. Test two, for `reversed(int[] arr)`, fails to point out the bug because the input is an emtpy array, and so is the symptom.
 
 ```
 @Test

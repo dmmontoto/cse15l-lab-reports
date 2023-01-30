@@ -40,8 +40,52 @@ public void testReversed() {
 ```
 
 * Below are the symptoms for `testReverseInPlace2()` and `testReversed1()`. In `testReverseInPlace2()`, the symptom you see in the terminal is `arrays first differed at element [3]; expected: <2> but was: <4>`. In `testReversed1()`, the symptom you see in the terminal is `arrays first differed at element [0]; expected: <4> but was:«0>`.
-Screen Shot 2023-01-29 at 9.28.40 PM.png
-Screen Shot 2023-01-29 at 9.29.44 PM.png
+![Image](Screen Shot 2023-01-29 at 9.28.40 PM.png)
+![Image](Screen Shot 2023-01-29 at 9.29.44 PM.png)
 
-### Part 3
+* Below is the code for `reverseInPlace(int[] arr)` and `reversed(int[] arr)` before any changes are made. `reverseInPlace(int[] arr)` is a method designed to take an input array and reverse the order of elements in this input array. `reversed(int[] arr)` is designed to take in a given input array and make a new copy of this array that is reversed.
+
+```
+static void reverseInPlace(int[] arr) {
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = arr[arr.length - i - 1];
+  }
+}
+
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    arr[i] = newArray[arr.length - i - 1];
+  }
+  return arr;
+}
+```
+
+* The bug in `reversedInPlace(int[] arr)` is that it does not have a way to store the values of the first half of the array, after they have been changed to the elements in the second half of the array. The code change necessary to fix this bug is creating a second integer array that is a direct copy of the input parameter “input 1.” This second copy will hold all the int values, so that when the first half of the integer array is reversed, the second half will also be. For the example, when the for loops iterates twice, making the array { 4, 3, 3, 4}, the next two iterations will make the array {4, 3, 2, 1} instead of keeping the array { 4, 3, 3, 4}. The second array has different reference variables. 
+
+* The bug in `reversed(int[] arr` is that it sets the input array equal to the new array that is created, instead of the other way around. Now the new array will still be null because the indexes are never set to the old array in reverse. The input array is set to the values of the new array, so the solution is to change the inside of the for loop, making new array indexes equal to the reverse of the old array.
+
+```
+static void reverseInPlace(int[] arr) {
+  int[] oldData = new int[arr.length];
+  for(int i = 0; i < oldData.length; i += 1) {
+    oldData[i] = arr[i];
+  }
+  for(int j = 0; j < arr.length; j +=1) {
+    arr[j] = oldData[arr.length - j - 1];
+  }
+}
+
+static int[] reversed(int[] arr) {
+  int[] newArray = new int[arr.length];
+  for(int i = 0; i < arr.length; i += 1) {
+    newArray[i] = arr[arr.length - i - 1];
+  }
+  return newArray;
+}
+```
+
+### Part 3: Understanding JUnit testing
+
+   JUnit testing is something new I have been introduced to. Before taking both CSE 15L and CSE 12 this quarter, I have never used JUnit testing. Now, I have learned that even if code passes test cases, it might still contain a bug. Hence, utilizing JUnit testing to "break" your code is important to ensure no edge case or unique input could produce wrong symptoms. From now on, I am excited to create more test cases and try and find bugs. 
 

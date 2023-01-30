@@ -41,6 +41,7 @@ public void testReversed() {
 
 * Below are the symptoms for `testReverseInPlace2()` and `testReversed1()`. In `testReverseInPlace2()`, the symptom you see in the terminal is `arrays first differed at element [3]; expected: <2> but was: <4>`. In `testReversed1()`, the symptom you see in the terminal is `arrays first differed at element [0]; expected: <4> but was:«0>`.
 Screen Shot 2023-01-29 at 9.28.40 PM.png
+Screen Shot 2023-01-29 at 9.29.44 PM.png
 
 ### Part 3
 

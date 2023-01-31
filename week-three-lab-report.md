@@ -1,9 +1,9 @@
 # Lab Report 2
 ## By David Montoto
 
-### Part 1
+### Part 1: StringServer.java
 
-* Below is the code utilied in StringServer.java to create a server that addes string and prints them consecutively on the web page. This stems from knowledge given in Lab 2, where we made a similar server that took in numbers, added them, and printed the total on the page.
+* Below is the code utilized in StringServer.java to create a server with a URL. The code also contains a method to take a string at the end of the URL and print it consecutively on the web page. The web page will print the strings at the end every time, keeping track of all of them. This stems from knowledge given in Lab 2, where we made a similar server that took in numbers, added them, and printed the total on the page.
 
 ```
 class Handler implements URLHandler {
@@ -41,21 +41,12 @@ class StringServer {
 }
 ```
 
-* the following two screenshots demonstrate how the method `public String handleRequest(URI url)` works.
+* The following two screenshots demonstrate how the method `public String handleRequest(URI url)` works.
 
 ![Image](Screen Shot 2023-01-30 at 3.27.45 PM.png)
-![Image](
+![Image](Screen Shot 2023-01-30 at 3.27.54 PM.png)
 
-
-
-
-Show the code for your StringServer, and two screenshots of using /add-message.
-
-For each of the two screenshots, describe:
-
-Which methods in your code are called?
-What are the relevant arguments to those methods, and the values of any relevant fields of the class?
-How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+* In image one, I typed "localhost:2000/add-messae?s=Hello", which called `public String handleRequest(URI url)`. In the method, the first if and else if booleans are false, sending the call into the else case, where the Query is split at "=" and the second part is added to the string with "\n" in front, printing the string on a new line. When I typed "localhost:2000/add-messae?s=Goodbye" in the second image, the same method is called and the method resorts to the else statement because there is a message at the end of the url. This string is concatenated to the end of the string already holding previous strings like the one from image one. Notice how in image two you can see both "Hello" and "Goodbye".
 
 ### Part 2: arrayList Bug
 

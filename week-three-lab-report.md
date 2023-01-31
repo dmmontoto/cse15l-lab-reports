@@ -43,6 +43,8 @@ class StringServer {
 
 * the following two screenshots demonstrate how the method `public String handleRequest(URI url)` works.
 
+![Image](Screen Shot 2023-01-30 at 3.27.45 PM.png)
+![Image](
 
 
 

@@ -1,5 +1,5 @@
 Hello github.
 Test 1.
 
-[link](week-one-lab-report.md)
-[link](week-three-lab-report.md)
+* Lab Report 1 [link](week-one-lab-report.md)
+* Lab Report 2 [link](week-three-lab-report.md)

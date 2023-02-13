@@ -54,21 +54,13 @@ Centuries before the arrival of Columbus, a peaceful Amerindian people who calle
 The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
 Since independence the Bahamas has kept British systems of judiciary and government yet has moved closer economically to its near neighbor, the US. The Bahamian Government has deliberately pursued tourism as the major industry of the Bahamian commonwealth and is happy to welcome many millions of visitors to its shores. The growth in cruise traffic has been particularly strong. The other islands, called the Family Islands by the government but generally referred to as the Out Islands by the tourist trade, have not shared this huge growth in numbers of visitors. Together they offer tourists almost any form of vacation experience, from the bustle of the busy city to the silence of the desert island.
 ```
-* ;
+* As seen above, three paragraphs were returned from this `grep` call. In the first and second paragraph, the word "Lucayans" can be seen. In the third paragraph, the word "judiciary" is located in there. 
 
-
-
-@Test
-public void testReverseInPlace2() {
-  int[] input1 = {1, 2, 3, 4, 5};
-  ArrayExamples.reverseInPlace(input1);
-  assertArrayEquals(new int[]{5, 4, 3, 2, 1}, input1);
-}
-
-@Test
-public void testReversed1() {
-  int[] input1 = {1, 2, 3, 4};
-  assertArrayEquals(new int[]{4, 3, 2, 1}. ArrayExamples.reversed(input1));
-}
 ```
+davidmontoto@Davids-MacBook-Air-2 skill-demo1-data % grep 'California\|Lucayans' ./written_2/travel_guides/Berlitz2/Bahamas-History.txt
+Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
+The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
+```
+
+* This code returned two paragraphs. The only thing changed was the first word, from "judiciary" to "California". Now, the two paragraphs returned are the two paragraphs containing the word "Lucayans." Even though the first word, "California", was not found, the `grep` call still searched for the others. This is because the `\|` stand for "or", and if one of the two strings do not exist in the file, the call will search for the other string. 
 

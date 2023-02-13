@@ -46,7 +46,7 @@ davidmontoto@Davids-MacBook-Air-2 skill-demo1-data % grep -Rl "California"
 * In the code block, multiple different paths were returned, each going to a different file. This is because there are a multiple .txt files in written_2 that contain the work "California."
 
 
-The next unique variation is `grep ...\|... filename`. This command will search the given file for either the string before the `\|` or after. All paragraphs containing either of these strings will be printed in order. This call can be great for searchig a large .txt file for two important key words. This variation of `grep` was found on the website "thegeekstuff." 
+The next unique variation is `grep ...\|... filename`. This command will search the given file for either the string before the `\|` or after. All paragraphs containing either of these strings will be printed in order. This call can be great for searchig a large .txt file for two important key words. This variation of `grep` was found on the website "thegeekstuff." [Click Here](https://www.thegeekstuff.com/2011/10/grep-or-and-not-operators/)
 
 ```
 davidmontoto@Davids-MacBook-Air-2 skill-demo1-data % grep 'judiciary\|Lucayans' ./written_2/travel_guides/Berlitz2/Bahamas-History.txt
@@ -63,4 +63,22 @@ The Spaniards never bothered to settle in the Bahamas, but the number of shipwre
 ```
 
 * This code returned two paragraphs. The only thing changed was the first word, from "judiciary" to "California". Now, the two paragraphs returned are the two paragraphs containing the word "Lucayans." Even though the first word, "California", was not found, the `grep` call still searched for the others. This is because the `\|` stand for "or", and if one of the two strings do not exist in the file, the call will search for the other string. 
+
+Another unqiue instance of `grep` is `grep -i`. When normally calling `grep` in the terminal, the search for the given string is case sensitive, so even a simple mistake of wrong capitalization can lead to a mistake. By adding the `-i`, the grep call is now not case sensitive. This call is beneficial for searching for a key word that may by at the start of the sentnece, middle, or all capitalized in some instances within the file. Also, `-i` is actually short for `ignore-case`. So, using either of these after the `grep` call with both result in a string search that is not case sensitive. This instance of `grep` came from asking ChatGPT for unique and alternative instances of `grep`.
+
+```
+davidmontoto@Davids-MacBook-Air-2 skill-demo1-data % grep -iRl "LUCAYANS"
+./written_2/travel_guides/berlitz2/Bahamas-History.txt
+```
+
+* In this first example, `-i` is actually called with one of the other unique commands talked about earlier, `-Rl`. By combining the two commands, the search is now looking for "LUCAYANS" without case sensitivity and returning the path to the file holding any variation of the string, with capitals or without. 
+
+```
+davidmontoto@Davids-MacBook-Air-2 skill-demo1-data % grep -i "LUCayaNS" written_2/travel_guides/berlitz2/Bahamas-History.txt
+Centuries before the arrival of Columbus, a peaceful Amerindian people who called themselves the Luccucairi had settled in the Bahamas. Originally from South America, they had traveled up through the Caribbean islands, surviving by cultivating modest crops and from what they caught from sea and shore. Nothing in the experience of these gentle people could have prepared them for the arrival of the Pinta, the Niña, and the Santa Maria at San Salvador on 12 October 1492. Columbus believed that he had reached the East Indies and mistakenly called these people Indians. We know them today as the Lucayans. Columbus claimed the island and others in the Bahamas for his royal Spanish patrons, but not finding the gold and other riches he was seeking, he stayed for only two weeks before sailing towards Cuba.
+The Spaniards never bothered to settle in the Bahamas, but the number of shipwrecks attest that their galleons frequently passed through the archipelago en route to and from the Caribbean, Florida, Bermuda, and their home ports. On Eleuthera the explorers dug a fresh-water well — at a spot now known as “Spanish Wells” — which was used to replenish the supplies of water on their ships before they began the long journey back to Europe with their cargoes of South American gold. As for the Lucayans, within 25 years all of them, perhaps some 30,000 people, were removed from the Bahamas to work — and die — in Spanish gold mines and on farms and pearl fisheries on Hispaniola (Haiti), Cuba, and elsewhere in the Caribbean.
+```
+
+* In this specific call, I input the string "LUCayaNS." Normally, the `grep` call would not have found this string due to the peculiar capitalization. However, the `-i` make the search case insensitive. Also, a direct path to Bahamas-History.txt is provided, so this call will search the strings contained within this .txt file. 
+
 

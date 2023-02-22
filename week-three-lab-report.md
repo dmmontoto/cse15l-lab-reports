@@ -134,3 +134,9 @@ static int[] reversed(int[] arr) {
 
    JUnit testing is something new I have been introduced to. Before taking both CSE 15L and CSE 12 this quarter, I have never used JUnit testing. Now, I have learned that even if code passes test cases, it might still contain a bug. Hence, utilizing JUnit testing to "break" your code is important to ensure no edge case or unique input could produce wrong symptoms. From now on, I am excited to create more test cases and try and find bugs. 
 
+```
+curl http://ieng6
+201 ucsd.edu:8003/search?
+Q+Bahamas
+```
+

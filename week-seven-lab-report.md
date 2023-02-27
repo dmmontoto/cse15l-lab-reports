@@ -7,3 +7,4 @@ In lab seven, we have been provided with two java files in a github file, being 
 
 * Step 1: Below is the image associated with step one, being to remotely log into my ieng6.ucsd.edu account. The exact line that I typed was `ssh cs15lwi23avz@ieng6.ucsd.edu`. 
 
+Screen Shot 2023-02-23 at 5.37.52 PM.png

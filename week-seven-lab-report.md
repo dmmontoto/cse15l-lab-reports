@@ -21,6 +21,10 @@ In lab seven, we have been provided with two java files in a github file, being 
 
 ![Image](Screen Shot 2023-02-23 at 5.42.30 PM.png)
 
-* Step 5: The next step is to run the files since we just compiled them from the terminal.
+* Step 5: The next step is to run the files since we just compiled them from the terminal. The exact line of code is as follows `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests<enter>`. Here, you can identify how one of the two tests failed, implying that the code did not run as expected when I ran it from the terminal. The specific test that failed is associated with the method 'merge' within ListExamples.java.
 
-![image](
+![image](Screen Shot 2023-02-23 at 5.43.47 PM.png)
+
+* Step 6: The next step is to open up the file from the terminal, and identify the mistake in the code that is causing the test to fail. By typing `nano ListExamples.java<enter>`, I can open up the java file from the terminal, as seen below. 
+
+![Image](

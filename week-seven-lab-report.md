@@ -27,11 +27,6 @@ In lab seven, we have been provided with two java files in a github file, being 
 
 * Step 6: The next step is to open up the file from the terminal, and identify the mistake in the code that is causing the test to fail. By typing `nano ListExamples.java<enter>`, I can open up the java file from the terminal, as seen below. 
 
-![Image](
+![Image](Screen Shot 2023-02-26 at 9.59.00 PM.png)
 
-42 DOWN
-17 right
-delete
-2
-control o
-control x
+* Step 7: Now that we are in the file, I can scan the specific method, `merge`, to find the error, which I do identify at line 43. Below, I move to the exact error which ic located at line 43. The code should be `index2 += 1` and not `index1 +=1`. I exactly typed `<down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><right><right><right><right><right><right><right><right><right><right><right><right><delete>2^O<enter>^X`.

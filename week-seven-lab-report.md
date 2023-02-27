@@ -15,3 +15,8 @@ In lab seven, we have been provided with two java files in a github file, being 
 
 * Step 3: The next step below is to change directory into the lab7 directory from what was just cloned. The line used is `cd lab7<enter>`.
 
+![Image](Screen Shot 2023-02-23 at 5.38.31 PM.png)
+
+* Step 4: The following step is compiling the files, with the exact code being `javac -cp -: Lib/hamcrest-core-1.3.jar: lib/junit-4.13.2.jar *.java<enter>`. We are compiling in this manner as we are using JUnit testing.
+
+![Image](

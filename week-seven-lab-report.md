@@ -28,3 +28,10 @@ In lab seven, we have been provided with two java files in a github file, being 
 * Step 6: The next step is to open up the file from the terminal, and identify the mistake in the code that is causing the test to fail. By typing `nano ListExamples.java<enter>`, I can open up the java file from the terminal, as seen below. 
 
 ![Image](
+
+42 DOWN
+17 right
+delete
+2
+control o
+control x

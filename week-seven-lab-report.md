@@ -35,4 +35,8 @@ In lab seven, we have been provided with two java files in a github file, being 
 
 * Step 8: The next step is to compile and run the code again to see if the tests now pass. By typing in `<up><up><up><up><up><up><enter><up><up><up><up><up><up><enter>`, I can go back to my compile and run lines ass seen below.
 
+![Image](Screen Shot 2023-02-26 at 10.27.06 PM.png)
+
+* Step 9: The next step is to commit and push. The next line I type is `git add ListExamples.java` as seen below.
+
 ![Image](

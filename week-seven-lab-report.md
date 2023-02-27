@@ -31,4 +31,8 @@ In lab seven, we have been provided with two java files in a github file, being 
 
 * Step 7: Now that we are in the file, I can scan the specific method, `merge`, to find the error, which I do identify at line 43. Below, I move to the exact error which ic located at line 43. The code should be `index2 += 1` and not `index1 +=1`. I exactly typed `<down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><down><right><right><right><right><right><right><right><right><right><right><right><right><delete>2^O<enter>^X`. After typing the code the terminal should return to how it looked before calling `nano ListExamples.java`.
 
+![Image](Screen Shot 2023-02-26 at 10.23.32 PM.png)
+
+* Step 8: The next step is to compile and run the code again to see if the tests now pass. By typing in `<up><up><up><up><up><up><enter><up><up><up><up><up><up><enter>`, I can go back to my compile and run lines ass seen below.
+
 ![Image](

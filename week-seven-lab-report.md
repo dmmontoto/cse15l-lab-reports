@@ -39,4 +39,8 @@ In lab seven, we have been provided with two java files in a github file, being 
 
 * Step 9: The next step is to commit and push. The next line I type is `git add ListExamples.java` as seen below.
 
+![Image](Screen Shot 2023-02-26 at 10.45.17 PM.png)
+
+* The next line of code works with the previous one and it is `git commit -m "Updated"`. After this line, we have successfully completed all tasks necessary to clone, compile, run, debug, and commit and push all from the temrinal!
+
 ![Image](

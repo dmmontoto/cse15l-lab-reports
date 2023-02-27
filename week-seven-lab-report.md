@@ -9,5 +9,9 @@ In lab seven, we have been provided with two java files in a github file, being 
 
 ![Image](Screen Shot 2023-02-23 at 5.37.52 PM.png)
 
-* Step 2: Below is the image associated with step two, which is to remotely clone the git file. The exact line used was `git clone git@github.com:dmmontoto/lab7.git`. You might notice how the line is different from the https:// link to clone the file. The reasoning behind this different is that I am using SSH Keys for GitHub.
+* Step 2: Below is the image associated with step two, which is to remotely clone the git file. The exact line used was `git clone git@github.com:dmmontoto/lab7.git <enter>`. You might notice how the line is different from the https:// link to clone the file. The reasoning behind this different is that I am using SSH Keys for GitHub.
+
+![Image](Screen Shot 2023-02-23 at 5.36.02 PM.png)
+
+* Step 3: The next step below is to change directory into the lab7 directory from what was just cloned. The line used is `cd lab7 <enter>`.
 

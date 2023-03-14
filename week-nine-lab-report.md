@@ -123,7 +123,7 @@ davidmontoto@Davids-Air-2 non-fiction % find . -name "*.txt"
 * Here, I wanted to find all `.txt` files contained in the current directory. By using `*.txt`, I was able to achieve that goal.
 
 The last unique iteration of `find` that I found was `find [path] -fstype [filesystem_type]
-`. This call is great for checking when was the last time that you modified a file. It can also be used to check if you are working with the right file by seeing if it was editied recently or not. 
+`. This call is great for checking when was the last time that you modified a file. It can also be used to check if you are working with the right file by seeing if it was editied recently or not. I also asked ChatGPT to find this last unique instance of `find`. 
 
 ```
 davidmontoto@Davids-Air-2 non-fiction % find . -mtime -30

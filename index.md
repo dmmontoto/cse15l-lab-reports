@@ -5,3 +5,4 @@ Test 1.
 * Lab Report 2 [link](week-three-lab-report.md)
 * Lab Report 3 [link](week-five-lab-report.md)
 * Lab Report 4 [link](week-seven-lab-report.md)
+* Lab Report 5 [link](week-nine-lab-report.md)
